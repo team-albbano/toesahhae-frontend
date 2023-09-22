@@ -27,8 +27,8 @@
     "eject": "react-scripts eject",
     "format": "prettier --check ./src",
     "format:fix": "prettier --write ./src",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
+    "lint:debug": "eslint 'src/**/*.{js,jsx,ts,tsx}' --debug"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +49,13 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.49.0"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^3.0.3"
   }
 }
