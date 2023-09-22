@@ -1,0 +1,46 @@
+@import './func.scss';
+@import '~sanitize.css';
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+  max-width: 430px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.App > .app-content {
+  width: 100%;
+  height: 100vh;
+  padding: 0 22px;
+  flex-grow: 1;
+  background-color: white;
+  @include vw(font-size, 16px);
+
+  @include MOBILE {
+      padding: 0 5vw;
+  }
+
+  &.app-content--none {
+      width: 100% !important;
+      padding: 0 !important;
+      margin-bottom: 0 !important;
+  }
+}
