@@ -35,12 +35,12 @@ code {
   @include vw(font-size, 16px);
 
   @include MOBILE {
-      padding: 0 5vw;
+    padding: 0 5vw;
   }
 
   &.app-content--none {
-      width: 100% !important;
-      padding: 0 !important;
-      margin-bottom: 0 !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
   }
 }
